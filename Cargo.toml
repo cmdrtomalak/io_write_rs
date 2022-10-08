@@ -3,6 +3,19 @@ name = "io_write_rs"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "subtitute"
+path = "src/subtitute/main.rs"
+
+[[bin]]
+name = "aread"
+path = "src/aread/main.rs"
+
+[[bin]]
+name = "awrite"
+path = "src/awrite/main.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+tokio = { version = "1.21.2", features = ["full"] }
