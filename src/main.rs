@@ -14,6 +14,11 @@ fn write_string(filename: &str, sout: &str) -> std::io::Result<()> {
 
 fn main() -> std::io::Result<()> {
     let text = read_file("hello.txt").unwrap();
+    println!("Text read:\n");
+    println!("{text}");
+    let text = text.replace(" a ", " such a ");
     let _ = write_string("write2.txt", &text);
+    println!("\nWritten to write2.txt:\n");
+    println!("{text}");
     Ok(())
 }
